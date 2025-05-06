@@ -8,14 +8,16 @@
   outputs = inputs: {
     devShells = {
       x86_64-linux = {
-        default = inputs.nixpkgs.legacyPackages.x86_64-linux.mkShell {
-          buildInputs = [
-            inputs.nixpkgs.legacyPackages.x86_64-linux.rustup
-            inputs.nixpkgs.legacyPackages.x86_64-linux.nushell
-          ];
-
-          shellHook = ''nu'';
-        };
+        default =
+          let
+            pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
+          in
+          pkgs.mkShell {
+            buildInputs = [
+              pkgs.rustup
+              pkgs.nushell
+            ];
+          };
       };
     };
   };
