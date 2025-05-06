@@ -8,12 +8,13 @@
   outputs = inputs: {
     devShells = {
       x86_64-linux = {
-        inherit inputs;
-        # This is the default shell for all platforms
         default = inputs.nixpkgs.legacyPackages.x86_64-linux.mkShell {
           buildInputs = [
             inputs.nixpkgs.legacyPackages.x86_64-linux.rustup
+            inputs.nixpkgs.legacyPackages.x86_64-linux.nushell
           ];
+
+          shellHook = ''nu'';
         };
       };
     };
