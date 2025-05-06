@@ -15,7 +15,6 @@
           pkgs.mkShell {
             buildInputs = [
               pkgs.rustup
-              pkgs.nushell
             ];
           };
       };

@@ -19,7 +19,7 @@
   "features": {
     "ghcr.io/devcontainers/features/nix:1": {
       "extraNixConfig": "experimental-features = nix-command flakes",
-      "packages": "nixfmt-unstable,nixd,direnv"
+      "packages": "nixfmt-unstable,nixd,direnv,nushell"
     }
   },
   "image": "mcr.microsoft.com/devcontainers/base"
