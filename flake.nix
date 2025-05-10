@@ -10,7 +10,10 @@
       x86_64-linux = {
         default =
           let
-            pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
+            pkgs = import inputs.nixpkgs {
+              system = "x86_64-linux";
+              config.allowUnfree = true;
+            };
           in
           pkgs.mkShell {
             buildInputs = [
