@@ -1,4 +1,7 @@
 {
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -22,6 +25,5 @@
       "extraNixConfig": "experimental-features = nix-command flakes,download-buffer-size = 524288000",
       "packages": "nixfmt-unstable,nixd,direnv,nushell"
     }
-  },
-  "image": "mcr.microsoft.com/devcontainers/base"
+  }
 }
