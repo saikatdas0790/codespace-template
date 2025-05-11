@@ -1,7 +1,7 @@
 {
   "terminal.integrated.profiles.linux": {
     "nushell": {
-      "path": "/home/vscode/.nix-profile/bin/nu"
+      "path": "/usr/local/bin/nu"
     }
   },
   "terminal.integrated.defaultProfile.linux": "nushell",
