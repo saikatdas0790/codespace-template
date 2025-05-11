@@ -24,6 +24,7 @@
     }
   },
   "features": {
-    "ghcr.io/eitsupi/devcontainer-features/nushell:0": {}
+    "ghcr.io/eitsupi/devcontainer-features/nushell:0": {},
+    "ghcr.io/devcontainers/features/rust:1": {}
   }
 }
