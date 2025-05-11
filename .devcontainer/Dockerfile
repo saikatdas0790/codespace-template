@@ -1,5 +1,4 @@
 FROM mcr.microsoft.com/devcontainers/base
 
-RUN apt update
-RUN apt full-upgrade --yes
-
+RUN sudo apt update
+RUN sudo apt full-upgrade --yes

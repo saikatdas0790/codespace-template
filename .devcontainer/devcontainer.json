@@ -22,5 +22,8 @@
         "TheNuProjectContributors.vscode-nushell-lang"
       ]
     }
+  },
+  "features": {
+    "ghcr.io/eitsupi/devcontainer-features/nushell:0": {}
   }
 }
